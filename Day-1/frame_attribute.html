@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+</head>
+<body bgcolor="green">
+    <h4>With frame="border":</h4>
+    <table frame="border">
+        <tr>
+            <td>First Year</td>
+            <td>Second Year</td>
+            <td>Third Year</td>
+        </tr>
+        <tr>
+            <td>First Year</td>
+            <td>Second Year</td>
+            <td>Third Year</td>
+        </tr>
+    </table>
+
+    <h4>With frame="box":</h4>
+    <table frame="box">
+        <tr>
+            <td>First Year</td>
+            <td>Second Year</td>
+            <td>Third Year</td>
+        </tr>
+        <tr>
+            <td>First Year</td>
+            <td>Second Year</td>
+            <td>Third Year</td>
+        </tr>
+    </table>
+
+    <p>Click on one of the text labels to toggle the related control:</p>
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male"/>
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="female"/>
+        <br><br>
+        <fieldset>
+            <legend>Personalia:</legend>
+            Name: <input type="text" size="30"><br>
+            Address: <input type="text" size="30"><br>
+            Phone No: <input type="text" size="12"><br>
+        </fieldset>
+        <hr color="black">
+        <select>
+            <option>Kaung Kaung</option>
+            <option>Kay Kaung</option>
+            <option>Kaung Kyaw</option>
+            <option>Mg Mg</option>
+        </select>
+
+        <hr color="black">
+        <select>
+            <optgroup label="stu">
+                <option value="Aung Aung">Aung Aung</option>
+                <option value="Khin Khin">Khin Khin</option>
+            </optgroup>
+
+            <optgroup label="add">
+                <option value="Yangon">Yangon</option>
+                <option value="Mandalay">Mandalay</option>
+            </optgroup>
+        </select>
+
+        <hr color="black">
+        <select>
+            <option value="1">Aung</option>
+            <option value="2">Mg</option>
+            <option value="3">Ma</option>
+            <option value="4">Ko</option>
+        </select>
+    </form>
+
+    <hr size="3" color="black">
+    <form action="frame_attribute.html">
+        First name: <input type="text" name="FirstName" value="Htun">
+        <br>
+        Last name: <input type="text" name="LastName" value="Htun">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+        <p>Click the "Submit" button and the input will be sent to a page on the server
+        called "frame_attribute.asp."</p>
+
+    <frameset cols="25%,50%,25%">
+        <frame src="Firstprogram1.html" />
+        <frame src="eg2.html" />
+        <frame src="frame_attribute.html" />
+        <noframes>
+        <body>
+        <p>Your browser does not handle frames!</p>
+        </body>
+        </noframes>
+    </frameset> 
+    
+    <ul>
+        <li>PHP </li>
+        <li>Java Programming </li>
+        <li>Basic C++ Programming</li>
+    </ul>
+    <ol>
+        <li>Khin Maung Aye</li>
+        <li>Myint Myint Win</li>
+        <li>Khin Myat Mon</li>
+    </ol>
+
+    <h4>Numbered list:</h4>
+    <ol>
+        <li>Rose</li>
+        <li>Jasmile</li>
+    </ol>
+    <h4>Letters list:</h4>
+    <ol type="A">
+        <li>Rose</li>
+        <li>Jasmile</li>
+    </ol>
+    <h4>Lowercase letters list:</h4>
+    <ol type="a">
+        <li>Rose</li>
+        <li>Jasmile</li>
+    </ol>
+    <h4>ercase Roman numbers list:</h4>
+    <ol type="i">
+        <li>Rose</li>
+        <li>Jasmile</li>
+    </ol>
+
+    <h4>Disc bullets list:</h4>
+    <ul type="disc">
+        <li>Lenovo</li>
+        <li>Dell</li>
+        <li>Apple</li>
+    </ul>
+    <h4>Circle bullets list:</h4>
+    <ul type="circle">
+        <li>Lenovo</li>
+        <li>Dell</li>
+        <li>Apple</li>
+    </ul>
+    <h4>Square bullets list:</h4>
+    <ul type="square">
+        <li>Lenovo</li>
+        <li>Dell</li>
+        <li>Apple</li>
+    </ul>
+
+    <h4>A nested List:</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <h4>A Definition List:</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+</body>
+</html>
