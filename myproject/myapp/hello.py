@@ -18,9 +18,9 @@ a = int(age)
 # str, int, float    / format ပြောင်းရင်သုံး
 type()
 print(name)
-print(name,"\n", age, "\n",city)
+print(name,"\n", age, "\n",city)  # "\n"  နောက်တစ်ကြောင်းဆင်း  # "\t"  tab key
 print(name + nick)
-print(type(age))
+print(type(age))    # type  = casting variables
 print(type(name))
 print(int(age))
 print(type(a))
@@ -49,14 +49,20 @@ print(b)
 print(c)
 print(d)
 
+# ==  equal 
+# !=  not equal
 
-a = 40
-#  +=
+# AND   နှစ်ခုစလုံးမှန်
+# OR     တစ်ခုမဟုတ်တစ်ခုမှန် 
+# NOT     အငြင်း
+
+a = 40      # assign
+#  +=     မူရင်းရှိတဲ့တန်ဖိုးကိုထပ်ပေါင်းထည့်
 b = a
 b += 20
-# -=
+# -=    မူရင်းရှိတဲ့တန်ဖိုးကိုနုတ်
 b -= 10
-# *=
+# *=    မူရင်းရှိတဲ့တန်ဖိုးကိုမြောက်
 b *= 5
 # %=
 b %= 10
