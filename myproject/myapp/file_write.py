@@ -1,0 +1,5 @@
+file = open("mynote.txt", "w")
+file.write("Welcome from my class")
+file.close()
+file = open("mynote.txt", "r")
+print(file.read())
