@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <a href="/home/">home</a>
+    <a href="/blog/">blog</a>
+    <a href="/product/">product</a>
+    <h1>This is homepage</h1>
+    <p>{{name}}</p>
+    <video width="320" height="240" controls>
+        <source src="/static/movie.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="/static/baby_laugh.mp3">
+    </audio>
+
+    {% block body %}{% endblock %}
+
+    {% block footer %}{% endblock %}
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
