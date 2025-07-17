@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in friends %}
+    <h3>{{i.name}}</h3>
+    <p>{{i.photo}}</p>
+    <img src="{{i.photo.url}}">
+    <hr>
+    {% endfor %}
+
+    <!-- {% for i in friends %}
+        {% if i.name == 'my' %}
+        <h1>{{i.name}}</h1>
+        {% elif i.name == "mg mg" %}
+        <a href="#">{{i.name}}</a>
+        {% else %}
+        <h5>{{i.name}}</h5>
+        {% endif %}
+    {% endfor %} -->
+
+    {% comment %}
+    hello
+    {% endcomment %}
+
+    <hr>
+    {% for i in mylist %}
+        <a href="{% url 'posts' %}">{{i}}</a>
+    {% endfor %}
+
+    It is {% now "D d M Y" %}
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>This is Postdata</h1>
+    <img src="{% static 'image/lotus.jpg' %}" alt="lotus">
+
+    {% for i in post_data %}
+
+       <h3>{{i.title}}</h3>
+       <p>{{i.post_body}}</p> 
+        <hr>
+    {% endfor %}
+    
+</body>
+</html>
